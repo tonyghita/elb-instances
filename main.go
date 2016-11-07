@@ -39,10 +39,6 @@ func main() {
 	})
 
 	if err != nil {
-		fmt.Println("profile:", *profile)
-		fmt.Println("region:", *region)
-		fmt.Println("name:", elbName)
-
 		log.Fatalln("unable to describe load balancer:", err)
 	}
 
